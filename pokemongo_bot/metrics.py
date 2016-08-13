@@ -59,6 +59,9 @@ class Metrics(object):
     def num_evolutions(self):
         return self.evolutions['latest'] - self.evolutions['start']
 
+    def total_dust(self):
+        return self.dust['latest']
+
     def earned_dust(self):
         return self.dust['latest'] - self.dust['start']
 
